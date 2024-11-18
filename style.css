@@ -1,0 +1,1261 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Quicksand;
+
+}
+
+/* Navbar Full Width */
+/* Navbar Full Width */
+.navbar {
+    width: 100%;
+    background-color: #212529 !important;
+    /* Dark background */
+}
+
+/* Container fluid to ensure full-width */
+.container-fluid {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Style for the navbar items */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Navbar item styles */
+.nav-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navbar link style */
+.nav-link {
+    display: block;
+    color: #d1d1d1;
+    /* Light gray for the text */
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+    /* Yellow hover color */
+    background-color: #343a40;
+    /* Dark background when hovering */
+    border-radius: 5px;
+    /* Rounded corners on hover */
+}
+
+/* Active link style */
+.nav-link.active {
+    color: #ffffff;
+    /* White color for active links */
+    background-color: #007bff;
+    /* Blue background for active link */
+    border-radius: 5px;
+    /* Rounded corners for active link */
+    font-weight: bold;
+    /* Make active link bold */
+}
+
+/* Icon styling */
+.nav-icon {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #d1d1d1;
+    /* Light gray icons */
+}
+
+.nav-link:hover .nav-icon {
+    color: #ffc107;
+    /* Yellow icon color on hover */
+}
+
+/* Navbar background */
+.bg-dark {
+    background-color: #212529 !important;
+    /* Dark background color */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 10px 20px;
+    }
+
+    /* Adjust the navbar toggle button */
+    .navbar-toggler {
+        border-color: #ffc107;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #ffc107;
+    }
+}
+
+
+
+.hero-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    font-family: Allerta Stencil;
+    font-size: 300px;
+    font-weight: 400;
+    line-height: 383.5px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(85, 194, 255, 1);
+
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+
+    filter: drop-shadow(20px 70px 80px rgb(0, 188, 245));
+}
+
+.XUV700-fectures {
+    width: 100%;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 items per row */
+    gap: 10px;
+    /* Space between items */
+    padding: 20px;
+    width: 50%;
+    justify-items: center;
+    /* Center content horizontally */
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 16px;
+    color: #ffa500;
+    margin-bottom: 5px;
+
+
+}
+
+.feature p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.XUV700-fectures-table {
+    width: auto !important;
+    padding-left: 15%;
+}
+
+.specifications {
+    margin-top: 2rem;
+}
+
+.spec-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+    color: #5ab4ff;
+}
+
+.price {
+    color: #ffd700;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.second_section {
+    position: relative;
+    padding: 0% 10%;
+}
+
+/* Adding the blurred image as a background using ::before */
+.second_section::before {
+    content: "";
+    background-image: url(./imgs/secsecimg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    /* Adjust blur level */
+    opacity: 0.5;
+    /* Adjust opacity level */
+    z-index: -1;
+    /* Ensures it's behind the content */
+}
+
+
+.description_main_div {
+    display: flex;
+    gap: 8%;
+
+
+}
+
+.description_main_div p {
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.description {
+    margin-top: 2rem;
+    position: relative;
+    width: 41%;
+}
+
+.sec2img {
+    top: 0%;
+    left: 0%;
+    filter: drop-shadow(20px 70px 80px rgb(0, 65, 245));
+
+}
+
+.offers-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.offers-section-title {
+    display: flex;
+
+}
+
+.offers-section-sub {
+    text-align: left;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.offers-section h2 {
+    color: #ffd700;
+}
+
+.offer-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.offer-button:hover {
+    background-color: #ff7f00;
+}
+
+.variants-table {
+    color: #ddd;
+    margin-top: 1rem;
+}
+
+.variants-table th,
+.variants-table td {
+    padding: 0.75rem;
+}
+
+.view-offers {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.view-offers:hover {
+    background-color: #ff7f00;
+}
+
+.mileage-section,
+.expert-advice-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+    padding: 0% 10%;
+}
+
+.mileage-section h3 {
+    font-size: 64px;
+    font-family: Quicksand;
+}
+
+.expert-advice-section h2 {
+    color: #ffd700;
+    font-size: 96px;
+}
+
+.expert-advice-section h4 {
+    font-size: 64px;
+    font-family: Quicksand;
+}
+
+.expert-advice-section-title {
+    display: flex;
+    position: relative;
+    width: 110%;
+}
+
+.sec2img-div {
+    transform: rotateY(-180deg);
+
+}
+
+.variants-table,
+.mileage-table {
+    color: #ddd;
+    margin-top: 1rem;
+}
+
+.mileage-table thead {
+    border-radius: 10px;
+}
+
+.mileage-table th {
+    color: #5ab4ff;
+}
+
+.mileage-table td {
+    padding: 0.75rem;
+    background-color: transparent;
+    border-color: #444;
+}
+
+.expert-advice-section h3 {
+    color: #ff9900;
+    margin-top: 2rem;
+}
+
+.tab-content p {
+    color: #ccc;
+}
+
+.tab-content img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+
+
+}
+
+.sec4img-div {
+    transform: rotateY(180deg);
+
+}
+
+.tab-pane p {
+    font-family: Quicksand;
+    font-size: 24px;
+    line-height: 38.04px;
+    text-align: left;
+}
+
+
+.nav-tabs .nav-link.active {
+    color: rgba(255, 172, 48, 1);
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+
+}
+
+/* Inactive tab color */
+.nav-tabs .nav-link {
+    color: white;
+    background-color: transparent;
+    font-size: 32px;
+    border: none;
+
+
+}
+
+/* Add separator between list items */
+.nav-tabs .nav-item:not(:last-child) {
+    position: relative;
+    padding-right: auto;
+    /* Add space for separator */
+
+}
+
+.nav-tabs .nav-item:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    /* Adjust color as needed */
+    font-weight: bold;
+    font-size: 32px;
+
+}
+
+
+
+
+
+.pros-cons-section {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+.pros-cons-head {
+    display: flex;
+    margin-top: 5%;
+}
+
+.pros-cons-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pros-cons-subtitle {
+    font-size: 40px;
+    color: #aaa;
+    margin: 20px 0 40px;
+}
+
+.pros-cons-para {
+    font-size: 25px;
+    text-align: left;
+    line-height: 46.88px;
+
+
+}
+
+.divider {
+    border-top: 1px solid #555;
+    margin: 5px 0;
+}
+
+.pros,
+.cons {
+    text-align: left;
+    padding: 0% 6%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pros h2 {
+    color: rgba(0, 186, 108, 1);
+}
+
+.cons h2 {
+    color: rgba(254, 89, 89, 1);
+}
+
+.list-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.list-item {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.view-more, .btn-review {
+    background-color: #000;
+    color: #ff9900;
+    padding: 8px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: solid #ff9900 1px;
+    margin-top: 20px;
+
+}
+
+.view-more:hover {}
+
+.section {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 96px;
+    margin-bottom: 20px;
+    text-align: left
+}
+
+.star-rating1 {
+    color: #ff9900;
+    font-size: 64px;
+    text-align: left;
+}
+
+.star-rating {
+    color: #ff9900;
+    font-size: 24px;
+    text-align: left;
+}
+
+.review-cards {
+    width: 103%;
+    text-align: left;
+}
+
+.review-card {
+    border-radius: 8px;
+    border: solid 2px white;
+    padding: 20px;
+    margin: 20px 10px;
+    width: 31%;
+    display: inline-block;
+    text-align: left;
+}
+
+.review-card h4 {
+    color: #ff9900;
+}
+
+.btn-review, .view-more-btn {
+    background-color: transparent;
+    color: #ff9900;
+    padding: 8px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: solid #ff9900 1px;
+    margin-top: 20px;
+    height: 0%;
+    text-align: left;
+}
+
+.btn-filter {
+    background-color: #000;
+    color: rgba(255, 255, 255, 1);
+    padding: 8px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: solid rgba(255, 255, 255, 1) 1px;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.button_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-card {
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-card h5 {
+    color: #ff9900;
+    margin-top: 10px;
+}
+
+.user-reviews section h2 {
+    font-size: 96px;
+}
+
+.related-videos {
+    margin-top: 5%;
+}
+
+.related-videos h2 {
+    font-size: 90px;
+}
+
+.related-videos-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.related-videos-img {
+    width: 120%;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image2 {
+    position: absolute;
+    left: 37%;
+    top: 25%;
+}
+
+.related-videos-title-sub {
+    display: flex;
+    margin: 3%;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+.related-videos-title-sub p {
+
+    width: 70%;
+    text-align: left;
+}
+
+
+/* all Varinate table */
+
+.container {
+    padding: 20px;
+}
+
+/* Table header styling */
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    /* font-weight: bold; */
+    background: #444;
+    color: #5ab4ff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.column {
+    width: 33%;
+}
+
+.variant-header {
+    text-align: left;
+}
+
+.price-header {
+    text-align: center;
+}
+
+.action-header {
+    text-align: right;
+}
+
+/* Rest of the CSS remains unchanged */
+.AllVariants-table {
+    width: 80%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #ffa500;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab.active {
+    border-bottom: 2px solid #ffa500;
+}
+
+
+
+.table-row {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.variant {
+    width: 30%;
+    padding: 0 5%;
+}
+
+.variant h1 {
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    padding: 0rem;
+
+}
+
+
+.details {
+    color: white !important;
+    background-color: transparent !important;
+    padding: 0rem 0rem !important;
+    color: #555 !important;
+
+
+    font-size: 14px;
+}
+
+.pricee {
+    width: 25%;
+    color: ;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.on-road {
+    color: #ffa500 !important;
+    background-color: transparent !important;
+    padding: 0rem 0rem !important;
+
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e59500;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section img {
+        margin-top: 1rem;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .sec2img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .sec2img-div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .description img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .related-videos-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-section img {
+        margin-top: 1rem;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .sec2img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .sec2img-div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .description img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .related-videos-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up, for intermediate larger screens) */
+@media only screen and (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+
+    .hero-section img {
+        margin-top: 1rem;
+        max-width: 95%;
+        height: auto;
+    }
+
+    .sec2img {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .sec2img-div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .description img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .related-videos-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .sec2img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .sec2img-div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .description img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .related-videos-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 840px) {
+
+    .description_main_div {
+        flex-direction: column;
+
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hero-section h1 {
+        font-family: Allerta Stencil;
+        font-size: 180px;
+        font-weight: 400;
+        line-height: 150px;
+    }
+
+    .description {
+        margin-top: 2rem;
+        position: relative;
+        width: auto;
+    }
+
+    .offers-section-title {
+        flex-direction: column-reverse;
+    }
+
+    .AllVariants-table {
+        width: auto;
+    }
+
+    .offers-section {
+
+        padding: 0rem;
+
+    }
+
+    .pros-cons-head {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 5%;
+    }
+
+    .review-card {
+        width: 25%;
+    }
+
+    .related-videos-title-sub {
+        flex-direction: column;
+    }
+
+    .video-cards {
+        width: 50%;
+    }
+
+    .video-card {
+
+        width: 20%;
+    }
+
+    .nav-tabs .nav-item:not(:last-child)::after {
+        content: "|";
+        position: absolute;
+        right: -10px;
+        top: 0;
+        color: white;
+        font-weight: bold;
+        font-size: 55px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .sec2img-div {
+        display: none;
+        transform: rotateY(-180deg);
+    }
+
+    @media only screen and (max-width: 840px) and (min-width: 440px) {
+
+        .description_main_div {
+            flex-direction: column;
+
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hero-section h1 {
+            font-family: Allerta Stencil;
+            font-size: 180px;
+            font-weight: 400;
+            line-height: 150px;
+        }
+
+        .description {
+            margin-top: 2rem;
+            position: relative;
+            width: auto;
+        }
+
+        .offers-section-title {
+            flex-direction: column-reverse;
+        }
+
+        .AllVariants-table {
+            width: auto;
+        }
+
+        .offers-section {
+
+            padding: 0rem;
+
+        }
+
+        .pros-cons-head {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 5%;
+        }
+
+        .review-card {
+            width: 25%;
+        }
+
+        .related-videos-title-sub {
+            flex-direction: column;
+        }
+
+        .video-cards {
+            width: 40%;
+        }
+
+        .video-card {
+
+            width: 20%;
+        }
+
+        .nav-tabs .nav-item:not(:last-child)::after {
+            content: "|";
+            position: absolute;
+            right: -10px;
+            top: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 55px;
+        }
+
+        .related-videos-img {
+            display: none;
+        }
+
+        .img-container {
+            display: none;
+        }
+
+        .features-container {
+            width: 100%;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 440px) and (min-width: 300px) {
+
+        .description_main_div {
+            flex-direction: column;
+
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hero-section h1 {
+            font-family: Allerta Stencil;
+            font-size: 130px;
+            font-weight: 400;
+            line-height: 150px;
+        }
+
+        .description {
+            margin-top: 2rem;
+            position: relative;
+            width: auto;
+        }
+
+        .offers-section-title {
+            flex-direction: column-reverse;
+        }
+
+        .AllVariants-table {
+            width: auto;
+            padding: 0 !important;
+        }
+
+        .offers-section {
+
+            padding: 0rem;
+
+        }
+
+        .pros-cons-head {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 5%;
+        }
+
+        .review-card {
+            width: auto;
+        }
+
+        .related-videos-title-sub {
+            flex-direction: column;
+        }
+
+        .video-cards {}
+
+        .video-card {
+
+            width: 30%;
+            display: flex;
+        }
+
+        .nav-tabs .nav-item:not(:last-child)::after {
+            content: "|";
+            position: absolute;
+            right: -10px;
+            top: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 55px;
+        }
+
+        .related-videos-img {
+            display: none;
+        }
+
+        .img-container {
+            display: none;
+        }
+
+        .features-container {
+            width: 100%;
+            padding: 0;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .pros, .cons {
+            flex-direction: column;
+        }
+
+        .review-cards {
+            width: 103%;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+        }
+
+        .related-videos-title-sub p {
+            width: auto;
+            text-align: left;
+        }
+
+        .pros-cons-title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .tab-pane p {
+            font-family: Quicksand;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: left;
+        }
+
+        .expert-advice-section h2 {
+            color: #ffd700;
+            font-size: 40px;
+        }
+
+        .mileage-section h3 {
+            font-size: 32px;
+            font-family: Quicksand;
+        }
+
+        .variant {
+            width: auto;
+            padding: 0 0%;
+        }
+
+        .pricee {
+            width: 50%;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .table-row {
+            flex-direction: column;
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .offers-section-sub {
+            font-size: 18px;
+            line-height: 30.16px;
+        }
+
+        .description_main_div p {
+            font-size: 18px;
+            line-height: 30.16px;
+        }
+    }
